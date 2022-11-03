@@ -8,7 +8,61 @@
 <body>
   <div class="page-wrapper">
     <header class="header">
+      <nav class="header__navigation navigation">
+        <a class="navigation__logo">
+          <img src="images/icons/logo.svg" width="137" height="56" alt="Логотип Глейси.">
+        </a>
 
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--catalog">
+            <a class="navigation__link" href="catalog.html">
+              <span class="navigation__caption">Каталог</span>
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8081 7.0532a.6667.6667 0 1 0-.9428.9428l4.6603 4.6604a.6642.6642 0 0 0 .4797.2015.6644.6644 0 0 0 .4757-.2015l4.6604-4.6604a.6668.6668 0 0 0-.9428-.9428l-4.1953 4.1952-4.1952-4.1952Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__number" href="tel:+78005558628">+7 800 555-86-28</a>
+
+      <ul class="header__user-panel user-panel">
+        <li class="user-panel__item user-panel__item--search">
+          <button class="user-panel__button" type="button">
+            <span class="visually-hidden">Поиск по сайту</span>
+            <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"/>
+            </svg>
+          </button>
+
+          <form class="user-panel__form visually-hidden" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="user-panel__field" type="search" name="search-field" id="search-feild" placeholder="Поиск по сайту">
+          </form>
+        </li>
+        <li class="user-panel__item user-panel__item--log-in">
+          <button class="user-panel__button" type="button">
+            <span class="user-panel__caption">Вход</span>
+            <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666A.666.666 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z"/>
+            </svg>
+          </button>
+        </li>
+        <li class="user-panel__item user-panel__item--cart">
+          <button class="user-panel__button" type="button">
+            <span class="visually-hidden">Корзина: </span><span class="user-panel__caption">2 товара</span>
+            <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
     </header>
 
     <main class="main-index">
