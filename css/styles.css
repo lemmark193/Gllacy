@@ -28,7 +28,6 @@
     url("../fonts/inter-900.woff") format("woff");
 }
 
-
 html {
   box-sizing: border-box;
 }
@@ -42,6 +41,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", "Arial", sans-serif;
+  background-color: #FEAFC3;
 }
 
 img {
@@ -61,4 +61,16 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.main-index {
+  flex-grow: 1;
 }
