@@ -328,8 +328,13 @@
 
           <ul class="delivery__list">
             <li class="delivery__item delivery__item--date">
-              <label class="delivery__label" for="delivery-date-field">Дата <span class="delivery__info visually-hidden">Подсказка</span></label>
-              <!-- Отделить label от info и обернуть в див? -->
+              <label class="delivery__label" for="delivery-date-field">Дата</label>
+              <div class="delivery__info">
+                <span class="visually-hidden">Подсказка</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0003 2.125c-2.6926 0-4.8753 2.1828-4.8753 4.8753 0 2.6925 2.1827 4.8753 4.8753 4.8753 2.6925 0 4.8752-2.1828 4.8752-4.8753 0-2.6925-2.1827-4.8752-4.8752-4.8752ZM.7917 7.0004c0-3.4289 2.7797-6.2086 6.2086-6.2086 3.4289 0 6.2085 2.7797 6.2085 6.2086 0 3.4289-2.7796 6.2086-6.2085 6.2086-3.429 0-6.2086-2.7797-6.2086-6.2086ZM7 6.3334a.6667.6667 0 0 1 .6666.6667v2.2167a.6667.6667 0 0 1-1.3333 0V7.0001a.6667.6667 0 0 1 .6667-.6667Zm0-2.2168A.6667.6667 0 0 0 7 5.45h.0058a.6667.6667 0 0 0 0-1.3334h-.0058Z"/>
+                </svg>
+              </div>
               <input class="delivery__field field" type="text" name="delivery-date-field" id="delivery-date-field" placeholder="01.04.2020">
             </li>
             <li class="delivery__item delivery__item--number">
@@ -337,7 +342,13 @@
               <input class="delivery__field field" type="tel" name="delivery-number-field" id="delivery-number-field" placeholder="+7 800 999-00-00">
             </li>
             <li class="delivery__item delivery__item--address">
-              <label class="delivery__label" for="delivery-address-field">Дата <span class="delivery__info visually-hidden">Подсказка</span></label>
+              <label class="delivery__label" for="delivery-address-field">Адрес</label>
+              <div class="delivery__info">
+                <span class="visually-hidden">Подсказка</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0003 2.125c-2.6926 0-4.8753 2.1828-4.8753 4.8753 0 2.6925 2.1827 4.8753 4.8753 4.8753 2.6925 0 4.8752-2.1828 4.8752-4.8753 0-2.6925-2.1827-4.8752-4.8752-4.8752ZM.7917 7.0004c0-3.4289 2.7797-6.2086 6.2086-6.2086 3.4289 0 6.2085 2.7797 6.2085 6.2086 0 3.4289-2.7796 6.2086-6.2085 6.2086-3.429 0-6.2086-2.7797-6.2086-6.2086ZM7 6.3334a.6667.6667 0 0 1 .6666.6667v2.2167a.6667.6667 0 0 1-1.3333 0V7.0001a.6667.6667 0 0 1 .6667-.6667Zm0-2.2168A.6667.6667 0 0 0 7 5.45h.0058a.6667.6667 0 0 0 0-1.3334h-.0058Z"/>
+                </svg>
+              </div>
               <input class="delivery__field field" type="text" name="delivery-address-field" id="delivery-address-field" placeholder="ул. Большая Конюшенная, 19/8">
             </li>
           </ul>
@@ -362,7 +373,48 @@
     </main>
 
     <footer class="footer">
+      <ul class="social" aria-label="Ссылки на социальные сети.">
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.43 8.86c-1.17.48-3.5 1.49-7 3.01-.57.23-.86.45-.9.67-.04.36.42.5 1.04.7l.27.08c.6.2 1.43.44 1.86.45.39 0 .82-.16 1.3-.48 3.27-2.21 4.96-3.33 5.06-3.35.08-.02.18-.04.25.02.07.07.07.18.06.22-.05.19-1.84 1.86-2.77 2.72a28.24 28.24 0 0 0-.82.79c-.57.54-1 .96.02 1.63.5.32.89.59 1.28.85a88.77 88.77 0 0 0 1.8 1.23c.5.35.95.67 1.5.62.32-.03.65-.33.82-1.23.4-2.13 1.18-6.73 1.36-8.63.01-.16 0-.31-.02-.47a.5.5 0 0 0-.17-.33.78.78 0 0 0-.46-.14c-.46.01-1.15.25-4.48 1.64Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="m14 11.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L14 12.2c.25-.12.25-.3 0-.42ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
+      <ul class="footer__menu menu">
+        <li class="menu__item menu__item--important">Для поставщиков</li>
+        <li class="menu__item">Наши документы</li>
+        <li class="menu__item">О производстве</li>
+        <li class="menu__item">Экологические стандарты</li>
+      </ul>
+
+      <div class="footer__maid-in maid-in">
+        <a class="maid-in__logo" href="https://htmlacademy.ru/">
+          <svg class="maid-in__icon" width="93" height="27" viewBox="0 0 93 27" fill="currentColor" role="img" aria-label="Иконка HTML-academy." xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 10.42v2.08h1.99v-2.08H0Zm9.42-6.76c-1.26 0-2.28.58-2.92 1.4h-.07V0H4.79v12.5h1.64V8.21c0-1.72 1.07-2.95 2.64-2.95 1.49 0 2.35 1.11 2.35 2.6v4.64h1.65V7.57c0-2.38-1.47-3.9-3.65-3.9Zm12.11.24h-3.9V.88H16V3.9h-1.55v1.6H16v4.84c0 1.39.78 2.15 2.18 2.15h3.36v-1.61H18.5c-.55 0-.86-.32-.86-.86V5.5h3.89V3.9Zm11.72-.22c-1.3 0-2.31.64-2.86 1.67h-.06a2.9 2.9 0 0 0-2.71-1.67c-1.14 0-2 .6-2.52 1.46h-.07V3.9h-1.58v8.59h1.65v-4.4c0-1.61.84-2.8 2.12-2.83 1.21-.03 1.92.83 1.92 2.14v5.1h1.64V7.95c0-1.93 1.14-2.69 2.13-2.69 1.2 0 1.9.83 1.9 2.14v5.1h1.64V7.22c0-2.08-1.17-3.54-3.2-3.54Zm5.43 6.6c0 1.4.8 2.22 2.26 2.22h1.63v-1.6h-1.39c-.55 0-.86-.31-.86-.85V0h-1.64v10.28Zm-15.3 5.66h-.07a3.75 3.75 0 0 0-3.07-1.49c-2.54-.03-4.36 1.85-4.36 4.5 0 2.68 1.85 4.56 4.34 4.53a3.66 3.66 0 0 0 3.09-1.57h.07v1.33H25v-8.55h-1.62v1.25Zm-2.91 5.95a2.83 2.83 0 0 1-2.95-2.93 2.83 2.83 0 0 1 2.95-2.94c1.75 0 2.89 1.31 2.89 2.94 0 1.6-1.14 2.93-2.9 2.93Zm15.28-4.09a4.28 4.28 0 0 0-4.36-3.35 4.37 4.37 0 0 0-4.54 4.5 4.39 4.39 0 0 0 4.54 4.53 4.3 4.3 0 0 0 4.36-3.4h-1.71a2.68 2.68 0 0 1-2.63 1.83 2.84 2.84 0 0 1-2.91-2.95 2.82 2.82 0 0 1 2.9-2.94 2.7 2.7 0 0 1 2.64 1.78h1.71Zm8.8-1.86h-.07a3.75 3.75 0 0 0-3.07-1.49c-2.54-.03-4.36 1.85-4.36 4.5 0 2.68 1.85 4.56 4.34 4.53a3.66 3.66 0 0 0 3.09-1.57h.07v1.33h1.62v-8.55h-1.62v1.25Zm-2.91 5.95a2.83 2.83 0 0 1-2.95-2.93 2.83 2.83 0 0 1 2.95-2.94c1.75 0 2.89 1.31 2.89 2.94 0 1.6-1.14 2.93-2.9 2.93Zm13.88-5.87h-.07a3.73 3.73 0 0 0-3.08-1.57c-2.5-.03-4.35 1.85-4.35 4.52 0 2.66 1.82 4.54 4.37 4.5A3.74 3.74 0 0 0 55.43 22h.09v1.25h1.63V10.8h-1.63v5.21Zm-2.9 5.89a2.83 2.83 0 0 1-2.95-2.94 2.83 2.83 0 0 1 2.94-2.93c1.75 0 2.9 1.33 2.9 2.93a2.82 2.82 0 0 1-2.9 2.94Zm10.72-7.46a4.36 4.36 0 0 0-4.43 4.52c0 2.44 1.7 4.5 4.47 4.5 2 0 3.62-1.08 4.19-2.9h-1.71c-.39.82-1.3 1.34-2.41 1.34-1.56 0-2.67-1.04-2.79-2.37h7.08c.23-2.84-1.56-5.09-4.4-5.09Zm-.03 1.57a2.6 2.6 0 0 1 2.65 2.07H60.7a2.57 2.57 0 0 1 2.61-2.07Zm16.1-1.55c-1.31 0-2.32.64-2.87 1.66h-.05c-.5-1-1.44-1.66-2.72-1.66a2.9 2.9 0 0 0-2.53 1.45h-.07v-1.23H69.6v8.55h1.65v-4.39c0-1.6.85-2.78 2.13-2.81 1.21-.03 1.92.83 1.92 2.12v5.08h1.65v-4.52c0-1.92 1.14-2.68 2.13-2.68 1.2 0 1.9.83 1.9 2.12v5.08h1.65v-5.25c0-2.07-1.18-3.52-3.2-3.52Zm9.09 7.4-2.94-7.18h-1.82l3.92 9.36-.02.03c-.28.71-.59.97-1.35.97h-2.03v1.64h2.03c1.49 0 2.28-.67 2.84-2.12l3.77-9.88h-1.68l-2.72 7.18Z"/>
+          </svg>
+        </a>
+        <p class="main-in__text">Сделано в  <a class="maid-in__link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
+      </div>
     </footer>
   </div>
 </body>
