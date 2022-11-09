@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gllacy | Каталог</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">`
 </head>
 <body class="page page--pink">
   <div class="page-wrapper">
@@ -15,12 +15,31 @@
 
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--catalog">
-            <a class="navigation__link" href="catalog.html">
+            <button class="navigation__button" type="button">
               <span class="navigation__caption">Каталог</span>
               <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8081 7.0532a.6667.6667 0 1 0-.9428.9428l4.6603 4.6604a.6642.6642 0 0 0 .4797.2015.6644.6644 0 0 0 .4757-.2015l4.6604-4.6604a.6668.6668 0 0 0-.9428-.9428l-4.1953 4.1952-4.1952-4.1952Z"/>
               </svg>
-            </a>
+            </button>
+
+            <div class="navigation__catalog catalog-menu popover">
+              <h2 class="catalog-menu__title">Новинки</h2>
+
+              <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="#">Фруктовый&nbsp;лед</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Доставка и оплата</a>
@@ -42,8 +61,8 @@
             </svg>
           </button>
 
-          <form class="user-panel__form visually-hidden" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="user-panel__field" type="search" name="search-field" id="search-feild" placeholder="Поиск по сайту">
+          <form class="user-panel__form popover" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="user-panel__field field" type="search" name="search-field" id="search-feild" placeholder="Поиск по сайту">
           </form>
         </li>
         <li class="user-panel__item user-panel__item--log-in">
@@ -194,7 +213,7 @@
               <b class="products__price">310 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -209,7 +228,7 @@
               <b class="products__price">340 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -224,7 +243,7 @@
               <b class="products__price">330 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -239,7 +258,7 @@
               <b class="products__price">320 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -256,7 +275,7 @@
               <b class="products__price">330 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -271,7 +290,7 @@
               <b class="products__price">340 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -286,7 +305,7 @@
               <b class="products__price">270 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -301,7 +320,7 @@
               <b class="products__price">300 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -318,7 +337,7 @@
               <b class="products__price">310 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -333,7 +352,7 @@
               <b class="products__price">320 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -348,7 +367,7 @@
               <b class="products__price">360 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -363,7 +382,7 @@
               <b class="products__price">280 &#x20bd;/кг</b>
               <button class="products__cart" type="button">
                 <span class="visually-hidden">Добавить в корзину</span>
-                <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="products__cart-icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
               </button>
@@ -371,7 +390,32 @@
           </li>
         </ul>
 
+        <div class="main-catalog__products-controls">
+          <button class="main-catalog__button-more button" type="button">Показать еще</button>
 
+          <div class="main-catalog__products-pagination pagination">
+            <button class="pagination__control pagination__control--left" type="button" disabled>
+              <span class="visually-hidden">Предыдущая страница</span>
+              <svg class="pagination__arrow" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8647 13.1352a.665.665 0 0 0 .9405-.9404L5.6039 7.9935l4.2013-4.2013a.665.665 0 0 0-.9404-.9405L4.196 7.5205l-.0029.0028a.665.665 0 0 0 0 .9404l4.6715 4.6715Z"/>
+              </svg>
+            </button>
+            <button class="pagination__control pagination__control--right" type="button">
+              <span class="visually-hidden">Следующая страница</span>
+              <svg class="pagination__arrow" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8647 13.1352a.665.665 0 0 0 .9405-.9404L5.6039 7.9935l4.2013-4.2013a.665.665 0 0 0-.9404-.9405L4.196 7.5205l-.0029.0028a.665.665 0 0 0 0 .9404l4.6715 4.6715Z"/>
+              </svg>
+            </button>
+
+            <ol class="pagination__list">
+              <li class="pagination__item pagination__item--current"><a class="pagination__link">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+            </ol>
+          </div>
+        </div>
       </section>
 
     </main>

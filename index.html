@@ -15,12 +15,31 @@
 
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--catalog">
-            <a class="navigation__link" href="catalog.html">
+            <button class="navigation__button" type="button">
               <span class="navigation__caption">Каталог</span>
               <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8081 7.0532a.6667.6667 0 1 0-.9428.9428l4.6603 4.6604a.6642.6642 0 0 0 .4797.2015.6644.6644 0 0 0 .4757-.2015l4.6604-4.6604a.6668.6668 0 0 0-.9428-.9428l-4.1953 4.1952-4.1952-4.1952Z"/>
               </svg>
-            </a>
+            </button>
+
+            <div class="navigation__catalog catalog-menu popover">
+              <h2 class="catalog-menu__title">Новинки</h2>
+
+              <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="#">Фруктовый&nbsp;лед</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Доставка и оплата</a>
@@ -42,8 +61,8 @@
             </svg>
           </button>
 
-          <form class="user-panel__form visually-hidden" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="user-panel__field" type="search" name="search-field" id="search-feild" placeholder="Поиск по сайту">
+          <form class="user-panel__form popover" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="user-panel__field field" type="search" name="search-field" id="search-feild" placeholder="Поиск по сайту">
           </form>
         </li>
         <li class="user-panel__item user-panel__item--log-in">
