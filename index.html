@@ -61,8 +61,8 @@
             </svg>
           </button>
 
-          <form class="user-panel__form popover" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="user-panel__field field" type="search" name="search-field" id="search-feild" placeholder="Поиск по сайту">
+          <form class="user-panel__search-form popover" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="user-panel__search-field field" type="search" name="search-field" id="search-feild" placeholder="Поиск по сайту">
           </form>
         </li>
         <li class="user-panel__item user-panel__item--log-in">
@@ -72,6 +72,20 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666A.666.666 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z"/>
             </svg>
           </button>
+
+          <form class="user-panel__log-in-form log-in popover" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="log-in__title">Личный кабинет</h2>
+
+            <input class="log-in__field field" type="email" name="email" id="email" placeholder="email@example.com">
+            <input class="log-in__field field" type="password" name="password" id="password" placeholder="Пароль" value="пароль">
+
+            <div class="log-in__container">
+              <button class="log-in__submit button button--submit" type="submit">Войти</button>
+
+              <a class="log-in__link" href="#">Забыли пароль?</a>
+              <a class="log-in__link" href="#">Регистрация</a>
+            </div>
+          </form>
         </li>
         <li class="user-panel__item user-panel__item--cart">
           <button class="user-panel__button" type="button">
@@ -80,6 +94,34 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
             </svg>
           </button>
+
+          <div class="user-panel__cart cart-preview popover">
+            <h2 class="cart-preview__title">Корзина</h2>
+
+            <ul class="cart-preview__list">
+              <li class="cart-preview__product cart-product">
+                <h3 class="cart-product__title">Малинка</h3>
+                <img class="cart-product__image" src="images/desktop/product-raspberry.jpg" width="46" height="46" alt="Мороженое со вкусом малины.">
+                <span class="cart-product__info">1 кг х 310 &#x20bd;</span>
+                <b class="cart-product__price">310 &#x20bd;</b>
+                <button class="cart-product__delete" type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
+              </li>
+              <li class="cart-preview__product cart-product">
+                <h3 class="cart-product__title">Бабл-гам</h3>
+                <img class="cart-product__image" src="images/desktop/product-bubble-gum.jpg" width="46" height="46" alt="Ванильный пломбир 'Бабл-гам'.">
+                <span class="cart-product__info">1,5 кг х 320 &#x20bd;</span>
+                <b class="cart-product__price">480 &#x20bd;</b>
+                <button class="cart-product__delete" type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
+              </li>
+            </ul>
+
+            <a class="cart-preview__button button button--submit" href="#">Оформить заказ</a>
+            <b class="cart-preview__full-price">Итого: 790 &#x20bd;</b>
+          </div>
+
+          <div class="user-panel__cart user-panel__cart--empty"> <!-- Добавить/удалить класс "popover" -->
+            <p class="user-panel__cart-message">Ваша корзина пока пуста</p>
+          </div>
         </li>
       </ul>
     </header>
@@ -435,6 +477,21 @@
         <p class="main-in__text">Сделано в  <a class="maid-in__link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
       </div>
     </footer>
+  </div>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="modal__title">Мы обязательно ответим вам!</h2>
+      <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="modal__field field" type="text" name="feedback-name" id="feedback-name" placeholder="Имя и фамилия" required>
+        <input class="modal__field field" type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+        <textarea class="modal__field modal__field--textarea field" name="feedback-message" id="feedback-message" placeholder="В свободной форме" required></textarea>
+
+        <button class="modal__submit button button--submit" type="submit">Отправить</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>
