@@ -15,37 +15,36 @@
 
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--catalog">
-            <button class="navigation__button" type="button">
+            <button class="navigation__button menu-item" type="button">
               <span class="navigation__caption">Каталог</span>
-              <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8081 7.0532a.6667.6667 0 1 0-.9428.9428l4.6603 4.6604a.6642.6642 0 0 0 .4797.2015.6644.6644 0 0 0 .4757-.2015l4.6604-4.6604a.6668.6668 0 0 0-.9428-.9428l-4.1953 4.1952-4.1952-4.1952Z"/>
+              <svg class="navigation__arrow" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.808 6.195a.667.667 0 1 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943L8.003 10.39 3.808 6.195Z"/>
               </svg>
             </button>
 
-            <div class="navigation__catalog catalog-menu popover">
-              <h2 class="catalog-menu__title">Новинки</h2>
-
-              <ul class="catalog-menu__list">
-                <li class="catalog-menu__item">
-                  <a class="catalog-menu__link" href="catalog.html">Сливочное</a>
-                </li>
-                <li class="catalog-menu__item">
-                  <a class="catalog-menu__link" href="#">Щербеты</a>
-                </li>
-                <li class="catalog-menu__item">
-                  <a class="catalog-menu__link" href="#">Фруктовый&nbsp;лед</a>
-                </li>
-                <li class="catalog-menu__item">
-                  <a class="catalog-menu__link" href="#">Мелорин</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="catalog-menu popover">
+              <li class="catalog-menu__item catalog-menu__item--new">
+                <a class="catalog-menu__link" href="#">Новинки</a>
+              </li>
+              <li class="catalog-menu__item">
+                <a class="catalog-menu__link" href="catalog.html">Сливочное</a>
+              </li>
+              <li class="catalog-menu__item">
+                <a class="catalog-menu__link" href="#">Щербеты</a>
+              </li>
+              <li class="catalog-menu__item">
+                <a class="catalog-menu__link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-menu__item">
+                <a class="catalog-menu__link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Доставка и оплата</a>
+            <a class="navigation__link menu-item" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">О компании</a>
+            <a class="navigation__link menu-item" href="#">О компании</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +53,7 @@
 
       <ul class="header__user-panel user-panel">
         <li class="user-panel__item user-panel__item--search">
-          <button class="user-panel__button" type="button">
+          <button class="user-panel__button menu-item" type="button">
             <span class="visually-hidden">Поиск по сайту</span>
             <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"/>
@@ -66,7 +65,7 @@
           </form>
         </li>
         <li class="user-panel__item user-panel__item--log-in">
-          <button class="user-panel__button" type="button">
+          <button class="user-panel__button menu-item" type="button">
             <span class="user-panel__caption">Вход</span>
             <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666A.666.666 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z"/>
@@ -88,7 +87,7 @@
           </form>
         </li>
         <li class="user-panel__item user-panel__item--cart">
-          <button class="user-panel__button" type="button">
+          <button class="user-panel__button menu-item" type="button">
             <span class="visually-hidden">Корзина: </span><span class="user-panel__caption">2 товара</span>
             <svg class="user-panel__icon" width="16" height="17" viewBox="0 0 16 17" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
@@ -318,7 +317,7 @@
           </fieldset>
 
           <!-- Применить -->
-          <button class="filters__submit" type="button">Применить</button>
+          <button class="filters__submit" type="submit">Применить</button>
         </form>
       </section>
 
@@ -519,13 +518,13 @@
           <div class="main-catalog__products-pagination pagination">
             <button class="pagination__control pagination__control--left" type="button" disabled>
               <span class="visually-hidden">Предыдущая страница</span>
-              <svg class="pagination__arrow" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <svg class="pagination__arrow" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8647 13.1352a.665.665 0 0 0 .9405-.9404L5.6039 7.9935l4.2013-4.2013a.665.665 0 0 0-.9404-.9405L4.196 7.5205l-.0029.0028a.665.665 0 0 0 0 .9404l4.6715 4.6715Z"/>
               </svg>
             </button>
             <button class="pagination__control pagination__control--right" type="button">
               <span class="visually-hidden">Следующая страница</span>
-              <svg class="pagination__arrow" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <svg class="pagination__arrow" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8647 13.1352a.665.665 0 0 0 .9405-.9404L5.6039 7.9935l4.2013-4.2013a.665.665 0 0 0-.9404-.9405L4.196 7.5205l-.0029.0028a.665.665 0 0 0 0 .9404l4.6715 4.6715Z"/>
               </svg>
             </button>
@@ -571,11 +570,11 @@
         </li>
       </ul>
 
-      <ul class="footer__menu menu">
-        <li class="menu__item menu__item--important"><a class="menu__link" href="#">Для поставщиков</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Наши документы</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">О производстве</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Экологические стандарты</a></li>
+      <ul class="footer__list">
+        <li class="footer__item footer__item--important"><a class="footer__link" href="#">Для поставщиков</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Наши документы</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">О производстве</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Экологические стандарты</a></li>
       </ul>
 
       <div class="footer__maid-in maid-in">
